@@ -1,0 +1,56 @@
+{
+    "data": {
+      "apiName": "Case",
+      "childRelationships": {},
+      "fields": {
+        "Contact": {
+          "displayValue": "Valentin Stalf",
+          "value": {
+            "apiName": "Contact",
+            "childRelationships": {},
+            "fields": {
+              "Home_Country__c": {
+                "displayValue": "Germany",
+                "value": "DE"
+              },
+              "Product__r": {
+                "displayValue": "Metal",
+                "value": {
+                  "apiName": "Product2",
+                  "childRelationships": {},
+                  "fields": {
+                    "Id": {
+                      "displayValue": null,
+                      "value": "01tQy000008AkrPIAS"
+                    },
+                    "Name": {
+                      "displayValue": null,
+                      "value": "Metal"
+                    }
+                  },
+                  "id": "01tQy000008AkrPIAS",
+                  "lastModifiedById": "005Qy000006SbcHIAS",
+                  "lastModifiedDate": "2024-07-28T11:33:09.000Z",
+                  "recordTypeId": "012000000000000AAA",
+                  "recordTypeInfo": null,
+                  "systemModstamp": "2024-07-28T11:33:09.000Z"
+                }
+              }
+            },
+            "id": "003Qy000006ZBTNIA4",
+            "lastModifiedById": "005Qy000006SbcHIAS",
+            "lastModifiedDate": "2024-07-28T11:33:09.000Z",
+            "recordTypeId": "012000000000000AAA",
+            "recordTypeInfo": null,
+            "systemModstamp": "2024-07-28T17:24:58.000Z"
+          }
+        }
+      },
+      "id": "500Qy00000H1cpbIAB",
+      "lastModifiedById": "005Qy000006SbcHIAS",
+      "lastModifiedDate": "2024-07-28T12:07:49.000Z",
+      "recordTypeId": "012000000000000AAA",
+      "recordTypeInfo": null,
+      "systemModstamp": "2024-07-28T12:07:49.000Z"
+    }
+  }
