@@ -1,0 +1,38 @@
+<template>
+    <lightning-card id="productInformation" title="Product Details" icon-name="standard:individual">
+        <template lwc:if={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+        </template>
+        <template lwc:else>
+            <div class="slds-var-m-horizontal_large slds-var-m-vertical_medium">
+                <lightning-tile label={title} href={productURL}>
+                    <dl class="slds-dl_horizontal">
+                        <dt class="slds-dl_horizontal__detail">
+                            <p title="Cost per Calendar Month">Cost per Calendar Month: </p>
+                        </dt>
+                        <dd class="slds-dl_horizontal__label slds-tile__meta">
+                            <lightning-formatted-number value={pricebookEntry.data.Cost_per_Calendar_Month__c}
+                                format-style="currency"
+                                currency-code={pricebookEntry.data.CurrencyIsoCode}></lightning-formatted-number>
+                        </dd>
+                        <dt class="slds-dl_horizontal__detail">
+                            <p title="ATM Fee in other currencies">ATM Fee in other currencies:</p>
+                        </dt>
+                        <dd class="slds-dl_horizontal__label slds-tile__meta">
+                            <lightning-formatted-number value={pricebookEntry.data.ATM_Fee_in_other_currencies__c}
+                                format-style="percent"></lightning-formatted-number>
+                        </dd>
+                        <dt class="slds-dl_horizontal__detail">
+                            <p title="Card Replacement Cost">Card Replacement Cost:</p>
+                        </dt>
+                        <dd class="slds-dl_horizontal__label slds-tile__meta">
+                            <lightning-formatted-number value={pricebookEntry.data.Card_Replacement_Cost__c}
+                                format-style="currency"
+                                currency-code={pricebookEntry.data.CurrencyIsoCode}></lightning-formatted-number>
+                        </dd>
+                    </dl>
+                </lightning-tile>
+            </div>
+        </template>
+    </lightning-card>
+</template>
